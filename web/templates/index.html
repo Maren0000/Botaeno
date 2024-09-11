@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+
+    
+    <body>
+        <!--Profile Section-->
+        <div class="profile-bg-image" style="background-image: url('assets/BG/{{ Profile_Background }}.png');" ></div>
+        <img class="avatar-img" src="assets/profile-icons/{{ Profile_Icon }}.png" alt="Avatar">
+        <section class="bg-Profile">
+                <div class="profile-name">{{ Profile_Name }}</div>
+                <div class="profile-id">ID: {{ Profile_ShortID }}</div>
+                <div class="level-box">
+                    <div class="level-text">Level</div>
+                    <div class="level-text-json">{{ Profile_Level }}</div>
+                </div>
+                <img class="rating-img" src="assets/rating-icon/{{ Rating_Img }}.png"></img>
+                <div class="rating-box" style="--c: {{ Rating_Color }}">
+                    <div class="rating-text">Rating</div>
+                    <div class="rating-text-json">{{ Profile_Rating }}</div>
+                </div>
+        </section>
+
+        <section class="block-profile-stats-checkbox">
+            <img class="checkbox-img" src="assets/checkbox/Checkbox None.png"></img>
+            <img class="checkbox-img" src="assets/checkbox/Checkbox FC.png"></img>
+            <img class="checkbox-img" src="assets/checkbox/Checkbox AP+.png"></img>
+        </section>
+
+        <section class="block-profile-stats-diff">
+            <img class="diff-img" src="assets/Asset 1song_select_level.png"></img>
+            <img class="diff-img" src="assets/Asset 2song_select_level.png"></img>
+            <img class="diff-img" src="assets/Asset 3song_select_level.png"></img>
+            <img class="diff-img" src="assets/Asset 4song_select_level.png"></img>
+            <img class="diff-img" src="assets/Alpha Difficulty.png"></img>
+            <div class="stats-text-i-json">{{ Stat_I_Clear }} {{ Stat_I_FC }} {{ Stat_I_AP }}</div>
+            <div class="stats-text-ii-json">{{ Stat_II_Clear }} {{ Stat_II_FC }} {{ Stat_II_AP }}</div>
+            <div class="stats-text-iii-json">{{ Stat_III_Clear }} {{ Stat_III_FC }} {{ Stat_III_AP }}</div>
+            <div class="stats-text-iv-json">{{ Stat_IV_Clear }} {{ Stat_IV_FC }} {{ Stat_IV_AP }}</div>
+            <div class="stats-text-iv-a-json">{{ Stat_IV_A_Clear }} {{ Stat_IV_A_FC }} {{ Stat_IV_A_AP }}</div>
+        </section>
+
+        <section class="block-char-img" overflow="hidden">
+            <img class="char-img" src="assets/char/{{ Profile_Avatar }}.png"></img>
+        </section>
+
+        <!--B30 Section-->
+        <div class="bg-image"></div>
+        <section class="block-b30-scores">
+            <section class="block-top3">
+                <section class="block-top3-indiviual">
+                    <img class="img-top3-cover" src="assets/song-covers/{{ b1_name }}.png"></img>
+                    <img class="img-top3-layer" src="assets/b30-stats/Star Rank Background-{{ b1_diff }}-side.png"></img>
+                    <div class="record-text-top3">{{ b1_name }}</div>
+                    <div class="score-text-top3">{{ b1_score }}</div>
+                    <div class="rating-calc-text-top3">{{ b1_orig_constant }} —> {{ b1_rating }}</div>
+                </section>
+                <section class="block-top3-indiviual">
+                    <img class="img-top3-cover" src="assets/song-covers/{{ b2_name }}.png"></img>
+                    <img class="img-top3-layer" src="assets/b30-stats/Star Rank Background-{{ b2_diff }}-side.png"></img>
+                    <div class="record-text-top3">{{ b2_name }}</div>
+                    <div class="score-text-top3">{{ b2_score }}</div>
+                    <div class="rating-calc-text-top3">{{ b2_orig_constant }} —> {{ b2_rating }}</div>
+                </section>
+                <section class="block-top3-indiviual">
+                    <img class="img-top3-cover" src="assets/song-covers/{{ b3_name }}.png"></img>
+                    <img class="img-top3-layer" src="assets/b30-stats/Star Rank Background-{{ b3_diff }}-side.png"></img>
+                    <div class="record-text-top3">{{ b3_name }}</div>
+                    <div class="score-text-top3">{{ b3_score }}</div>
+                    <div class="rating-calc-text-top3">{{ b3_orig_constant }} —> {{ b3_rating }}</div>
+                </section>
+            </section>
+
+            <section class="block-top27">
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b4_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b4_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b4_name }}</div>
+                    <div class="score-text-top27">{{ b4_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b4_orig_constant }} —> {{ b4_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b5_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b5_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b5_name }}</div>
+                    <div class="score-text-top27">{{ b5_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b5_orig_constant }} —> {{ b5_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b6_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b6_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b6_name }}</div>
+                    <div class="score-text-top27">{{ b6_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b6_orig_constant }} —> {{ b6_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b7_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b7_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b7_name }}</div>
+                    <div class="score-text-top27">{{ b7_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b7_orig_constant }} —> {{ b7_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b8_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b8_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b8_name }}</div>
+                    <div class="score-text-top27">{{ b8_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b8_orig_constant }} —> {{ b8_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b9_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b9_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b9_name }}</div>
+                    <div class="score-text-top27">{{ b9_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b9_orig_constant }} —> {{ b9_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b10_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b10_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b10_name }}</div>
+                    <div class="score-text-top27">{{ b10_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b10_orig_constant }} —> {{ b10_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b11_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b11_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b11_name }}</div>
+                    <div class="score-text-top27">{{ b11_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b11_orig_constant }} —> {{ b11_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b12_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b12_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b12_name }}</div>
+                    <div class="score-text-top27">{{ b12_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b12_orig_constant }} —> {{ b12_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b13_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b13_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b13_name }}</div>
+                    <div class="score-text-top27">{{ b13_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b13_orig_constant }} —> {{ b13_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b14_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b14_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b14_name }}</div>
+                    <div class="score-text-top27">{{ b14_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b14_orig_constant }} —> {{ b14_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b15_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b15_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b15_name }}</div>
+                    <div class="score-text-top27">{{ b15_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b15_orig_constant }} —> {{ b15_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b16_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b16_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b16_name }}</div>
+                    <div class="score-text-top27">{{ b16_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b16_orig_constant }} —> {{ b16_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b17_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b17_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b17_name }}</div>
+                    <div class="score-text-top27">{{ b17_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b17_orig_constant }} —> {{ b17_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b18_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b18_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b18_name }}</div>
+                    <div class="score-text-top27">{{ b18_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b18_orig_constant }} —> {{ b18_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b19_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b19_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b19_name }}</div>
+                    <div class="score-text-top27">{{ b19_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b19_orig_constant }} —> {{ b19_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b20_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b20_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b20_name }}</div>
+                    <div class="score-text-top27">{{ b20_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b20_orig_constant }} —> {{ b20_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b21_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b21_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b21_name }}</div>
+                    <div class="score-text-top27">{{ b21_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b21_orig_constant }} —> {{ b21_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b22_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b22_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b22_name }}</div>
+                    <div class="score-text-top27">{{ b22_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b22_orig_constant }} —> {{ b22_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b23_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b23_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b23_name }}</div>
+                    <div class="score-text-top27">{{ b23_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b23_orig_constant }} —> {{ b23_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b24_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b24_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b24_name }}</div>
+                    <div class="score-text-top27">{{ b24_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b24_orig_constant }} —> {{ b24_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b25_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b25_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b25_name }}</div>
+                    <div class="score-text-top27">{{ b25_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b25_orig_constant }} —> {{ b25_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b26_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b26_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b26_name }}</div>
+                    <div class="score-text-top27">{{ b26_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b26_orig_constant }} —> {{ b26_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b27_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b27_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b27_name }}</div>
+                    <div class="score-text-top27">{{ b27_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b27_orig_constant }} —> {{ b27_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b28_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b28_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b28_name }}</div>
+                    <div class="score-text-top27">{{ b28_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b28_orig_constant }} —> {{ b28_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b29_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b29_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b29_name }}</div>
+                    <div class="score-text-top27">{{ b29_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b29_orig_constant }} —> {{ b29_rating }}</div>
+                </section>
+                <section class="block-top27-indiviual">
+                    <img class="img-top27-cover" src="assets/song-covers/{{ b30_name }}.png"></img>
+                    <img class="img-top27-layer" src="assets/b30-stats/Star Rank Background-{{ b30_diff }}.png"></img>
+                    <div class="record-text-top27">{{ b30_name }}</div>
+                    <div class="score-text-top27">{{ b30_score }}</div>
+                    <div class="rating-calc-text-top27">{{ b30_orig_constant }} —> {{ b30_rating }}</div>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

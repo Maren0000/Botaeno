@@ -1,0 +1,429 @@
+
+
+  @font-face {
+    font-family: RotFont;
+    src: url(../assets/NotoSansJP-Light.otf);
+  }
+
+  :root {
+    --r01: rgb(134, 255, 2);
+    --r23: rgb(6, 255, 2);
+    --r456: rgb(9, 255, 104);
+    --r789: rgb(2, 224, 255);
+    --r1011: rgb(252, 217, 6);
+    --r12: rgb(255, 9, 11);
+    --r13: rgb(252, 15, 174);
+    --r14: rgb(217, 13, 255);
+    --r15: rgb(252, 131, 1);
+    --r16: rgb(252, 129, 1);
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("../assets/The Promised Land HD.png");
+  
+    /* Add the blur effect */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 25px;
+    left:6px;
+  
+    /* Center and scale the image nicely */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: contain;
+    transform: scale(1.03);
+  }
+
+  .profile-bg-image {
+    /* Add the blur effect */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+  
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: contain;
+    transform: scale(1.03);
+  }
+
+
+
+
+
+  .bg-Profile {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/opacity/see-through */
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+
+  .avatar-img {
+    border-radius: 50%;
+    width: 175px;
+    outline: 50px soild red;
+    outline-offset: -4px;
+    left: 20px;
+    top: 30px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .profile-name {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    font-family: RotFont;
+    left: 220px;
+    position: absolute;
+    top: 5px;
+  }
+
+  .profile-id {
+    font-size: 1em;
+    color: lightgray;
+    font-family: RotFont;
+    left: 400px;
+    position: absolute;
+    top: 35px;
+  }
+
+  .level-box {
+    background-color: rgba(28, 226, 230, 0.3);
+    border-left: 4px solid rgb(28, 226, 230);
+    position: absolute;
+    left: 230px;
+    top: 90px;
+    width: 100px;
+    height: 50px; 
+    z-index: 5;
+  }
+
+  .level-text {
+    font-size: small;
+    color: rgb(28, 226, 230);
+    font-family: RotFont;
+    position: absolute;
+    left: 13px;
+    z-index: 6;
+  }
+
+  .level-text-json {
+    font-size: x-large;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 6;
+  }
+
+  .rating-img {
+    position: absolute;
+    z-index: 5;
+    left: 390px;
+    top: 95px;
+    width: 45px;
+  }
+
+  .rating-box {
+    background-color: rgba(var(--c), 0.3);
+    border-left: 4px solid rgb(var(--c));
+    position: absolute;
+    left: 450px;
+    top: 90px;
+    width: 100px;
+    height: 50px; 
+    z-index: 5;
+  }
+
+  .rating-text {
+    font-size: small;
+    color: rgb(234, 200, 86);
+    font-family: RotFont;
+    position: absolute;
+    left: 13px;
+    z-index: 6;
+  }
+
+  .rating-text-json {
+    font-size: x-large;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 6;
+  }
+
+  .level-text-json {
+    font-size: x-large;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 6;
+  }
+
+
+
+
+  .block-profile-stats-checkbox {
+    position: absolute;
+    top: 265px;
+    left: 100px;
+    width: 10px;
+    z-index: 3;
+  }
+  .checkbox-img {
+    width: 37px;
+  }
+  .block-profile-stats-diff {
+    position: absolute;
+    top: 200px;
+    left: 135px;
+    z-index: 3;
+  }
+  .diff-img {
+    display: table-cell;
+    width: 85px;
+  }
+  .stats-text-i-json {
+    font-size:33px;
+    text-align: center;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 14px;
+    top: 63px;
+    width: 60px;
+    z-index: 6;
+    line-height: 39px;
+    word-spacing: 9999999px;
+  }
+  .stats-text-ii-json {
+    font-size:33px;
+    text-align: center;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 98px;
+    top: 63px;
+    width: 60px;
+    z-index: 6;
+    line-height: 39px;
+    word-spacing: 9999999px;
+  }
+  .stats-text-iii-json {
+    font-size:33px;
+    text-align: center;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 184px;
+    top: 63px;
+    width: 60px;
+    z-index: 6;
+    line-height: 39px;
+    word-spacing: 9999999px;
+  }
+  .stats-text-iv-json {
+    font-size:33px;
+    text-align: center;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 269.5px;
+    top: 63px;
+    width: 60px;
+    z-index: 6;
+    line-height: 39px;
+    word-spacing: 9999999px;
+  }
+  .stats-text-iv-a-json {
+    font-size:33px;
+    text-align: center;
+    color: white;
+    font-family: RotFont;
+    position: absolute;
+    left: 355px;
+    top: 63px;
+    width: 60px;
+    z-index: 6;
+    line-height: 39px;
+    word-spacing: 9999999px;
+  }
+
+
+  .block-char-img {
+    position: absolute;
+    top: 10px;
+    left: 570px;
+    z-index: 4;
+  }
+  .char-img {
+    width: 100%;
+    object-fit:cover;
+  }
+
+
+
+
+
+  .block-b30-scores {
+    position: absolute;
+    display: grid;
+    top: 430px;
+    z-index: 6;
+  }
+  .block-top3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    left: 17px;
+    white-space: nowrap;
+  }
+  .block-top3-indiviual {
+    display: inline-block;
+    width: 315px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .img-top3-cover {
+    position: relative;
+    border-radius: 50%;
+    width: 140px;
+    z-index: 7;
+  }
+  .img-top3-layer {
+    position: relative;
+    top: 2px;
+    right: 80px;
+    width: 240px;
+    z-index: 6;
+  }
+
+  .block-top27 {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    top: 3px;
+    left: 17px;
+    flex-wrap: wrap;
+  }
+  .block-top27-indiviual {
+    width: 133px;
+    height: 280px;
+  }
+  .img-top27-cover {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    left: 3.5px;
+    z-index: 7;
+  }
+  .img-top27-layer {
+    position: relative;
+    bottom: 60px;
+    left: 3px;
+    width: 120px;
+    z-index: 6;
+  }
+
+  .score-text-top3 {
+    font-size:33px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    position: relative;
+    text-align: center;
+    bottom: 130px;
+    left: 60px;
+    z-index: 9;
+  }
+
+  .record-text-top3 {
+    font-size:20px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    position: relative;
+    text-align: center;
+    bottom: 135px;
+    left: 110px;
+    white-space:break-spaces;
+    word-break: break-word;
+    width: 200px;
+    max-height: 50px;
+    z-index: 9;
+  }
+
+  .rating-calc-text-top3 {
+    font-size:20px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    position: relative;
+    text-align: center;
+    bottom: 130px;
+    left: 50px;
+    z-index: 9;
+  }
+
+  .score-text-top27 {
+    font-size:25px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    text-align: center;
+    position: relative;
+    bottom: 205px;
+    right: 3px;
+    z-index: 9;
+  }
+
+  .record-text-top27 {
+    font-size:15px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    position: relative;
+    bottom: 205px;
+    max-width: 128px;
+    text-align: center;
+    overflow-wrap: break-word;
+    z-index: 9;
+  }
+
+  .rating-calc-text-top27 {
+    font-size:15px;
+    color: white;
+    font-family: RotFont;
+    font-size: bold;
+    position: relative;
+    text-align: center;
+    bottom: 200px;
+    right: 3px;
+    z-index: 9;
+  }
+
